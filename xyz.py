@@ -1,12 +1,9 @@
-def sum_fib(n):
-    a = 1
-    b = 0
-    c = 0
-    while a < n:
-        c += a
-        a, b = a + b, a
-        return c
-
-print(sum_fib(20))
+n = int(input("задайте N:"))
+for i in range(1, n):
+    d = 1
+    while i >= d:
+        d = d * 10
+        if (i % d) == i:
+            print("число", i, "квадрат", i * i)
 
 
